@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark_Raspberry: hsl(332, 51%, 32%);
+  --White: hsl(0, 0%, 100%);
+  --Rose_White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light_Grey: hsl(30, 18%, 87%);
+  --Wenge_Brown: hsl(30, 10%, 34%);
+  --Dark_Charcoal: hsl(24, 5%, 18%);
+
+  --font-size: 16px;
+  --font-family_Young_Serif: "Young Serif", serif;
+  --font-family_Outfit: "Outfit", sans-serif;
+  --font-weight: 400;
+  --font-weight: 600;
+  --font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: var(--font-size);
+  background-color: var(--Eggshell);
+  margin: 90px;
+}
+img {
+  border-radius: 10px;
+  width: 100%;
+}
+h1 {
+  color: var(--Dark_Charcoal);
+  font-family: var(--font-family_Young_Serif);
+  margin: 13px;
+}
+p {
+  color: var(--Wenge_Brown);
+  font-family: var(--font-family_Outfit);
+  font-size: var(--font-size);
+  margin: 13px;
+}
+.card {
+  background-color: var(--White);
+  height: fit-content;
+  padding: 20px;
+  border-radius: 20px;
+}
+#Preparation_card {
+  background-color: var(--Rose_White);
+  padding: 15px;
+  border-radius: 10px;
+}
+#Preparation_card > h3 {
+  color: var(--Dark_Raspberry);
+  font-family: var(--font-family_Outfit);
+}
+#Preparation_card ul {
+  color: var(--Wenge_Brown);
+  margin: 20px;
+}
+#Preparation_card li::marker {
+  color: var(--Dark_Raspberry);
+}
+#Preparation_card li {
+  margin-bottom: 15px;
+}
+#Preparation_card span,
+#instruction span {
+  font-weight: var(--font-weight);
+  font-family: var(--font-family_Outfit);
+  margin: 10px;
+  color: var(--Wenge_Brown);
+}
+#ingredients > h2,
+#instruction > h2 {
+  color: var(--Nutmeg);
+  font-family: var(--font-family_Young_Serif);
+  padding: 20px;
+}
+#ingredients li::marker {
+  color: var(--Nutmeg);
+}
+#ingredients li {
+  margin-bottom: 15px;
+}
+#ingredients ul,
+#instruction {
+  font-family: var(--font-family_Outfit);
+  color: var(--Wenge_Brown);
+  margin: 50px;
+  margin-top: -5px;
+  list-style-type: square;
+  padding: 5px;
+  margin-bottom: 7px;
+}
+#instruction li::marker {
+  color: var(--Nutmeg);
+}
+#instruction li {
+  font-size: 15px;
+  font-family: var(--font-family_Outfit);
+  margin-bottom: 15px;
+}
+#instruction ul {
+  color: var(--Wenge_Brown);
+}
+#nutrition > h2 {
+  color: var(--Nutmeg);
+  font-family: var(--font-family_Young_Serif);
+  margin: 15px;
+}
+#nutrition p {
+  font-family: var(--font-family_Outfit);
+  color: var(--Wenge_Brown);
+  margin: 30px;
+}
+.last {
+  display: flex;
+}
